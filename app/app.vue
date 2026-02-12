@@ -1,6 +1,6 @@
 <template>
 	<UApp>
-		<UHeader>
+		<UHeader class="absolute w-full bg-neutral-800">
 			<template #title>
 				<img src="~/assets/images/edge-logo-transparent.png" class="h-8 w-auto" />
 			</template>
@@ -16,13 +16,13 @@
 			</template>
 		</UHeader>
 
-		<UMain>
+		<UMain class="bg-neutral-800">
 			<NuxtLayout>
 				<NuxtPage />
 			</NuxtLayout>
 		</UMain>
 
-		<UFooter class="py-10">
+		<UFooter class="bg-neutral-800 py-10">
 			<div class="text-center">
 				<div>
 					<UButton
