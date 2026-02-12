@@ -46,7 +46,7 @@
 <script setup lang="ts">
 	const currentYear = new Date().getFullYear();
 	const navigationLinks: { label: string; link: string }[] = [
-		{ label: "About", link: "#about" },
+		{ label: "Stack", link: "#stack" },
 		{ label: "Experience", link: "#experience" },
 		{ label: "Projects", link: "#projects" },
 	];
