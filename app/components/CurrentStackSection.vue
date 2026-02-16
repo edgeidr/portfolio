@@ -65,8 +65,6 @@
 			</UPageCard>
 		</UPageGrid>
 	</UPageSection>
-
-	<UDrawer> </UDrawer>
 </template>
 
 <script lang="ts" setup>
