@@ -2,6 +2,7 @@
 	<HeroSection />
 	<CurrentStackSection />
 	<ExperienceSection />
+	<ProjectsSection />
 	<ContactSection />
 </template>
 
