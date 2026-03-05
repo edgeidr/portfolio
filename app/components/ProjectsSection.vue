@@ -13,8 +13,10 @@
 		:links="[
 			{
 				label: 'View Project Archive',
+				class: 'group',
 				trailingIcon: 'hugeicons:arrow-right-02',
 				variant: 'link',
+				ui: { trailingIcon: 'transition-all group-hover:translate-x-1' },
 			},
 		]">
 		<template #features>

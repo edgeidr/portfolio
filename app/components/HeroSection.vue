@@ -31,6 +31,8 @@
 			label: "View My Work",
 			trailingIcon: "hugeicons:arrow-right-02",
 			to: "#projects",
+			ui: { trailingIcon: "transition-all group-hover:translate-x-1" },
+			class: "group",
 		},
 		{
 			label: "Let's Collaborate",

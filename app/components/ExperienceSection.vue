@@ -38,9 +38,12 @@
 					label="Boldr Inc."
 					variant="link"
 					color="neutral"
-					trailingIcon="hugeicons:link-square-02"
-					class="p-0"
-					:ui="{ trailingIcon: 'size-4' }" />
+					trailingIcon="hugeicons:arrow-up-right-01"
+					class="group/btn p-0"
+					:ui="{
+						trailingIcon:
+							'size-4 transition-all group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5',
+					}" />
 			</template>
 
 			<template #description="{ item }">
