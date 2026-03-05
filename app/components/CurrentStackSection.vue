@@ -12,18 +12,15 @@
 			links: 'fade-up',
 		}">
 		<template #links>
-			<UDrawer>
+			<UDrawer title="My Skills" :ui="{ title: 'text-center' }">
 				<UButton label="View All Skills" variant="subtle" />
 
 				<template #body>
-					<UPageLogos
-						title="My Skills"
-						:items="skills"
-						marquee
-						:ui="{
-							logos: 'pb-16',
-							logo: 'size-24',
-						}" />
+					<UMarquee class="mt-10 mb-16">
+						<UTooltip v-for="skill in skills" :text="skill.name" :delayDuration="0">
+							<Icon :name="skill.icon" class="size-24" />
+						</UTooltip>
+					</UMarquee>
 				</template>
 			</UDrawer>
 		</template>
@@ -77,7 +74,7 @@
 </template>
 
 <script lang="ts" setup>
-	import type { PageCardProps, PageLogosProps } from "@nuxt/ui";
+	import type { PageCardProps } from "@nuxt/ui";
 
 	const cards: PageCardProps[] = [
 		{
@@ -97,17 +94,17 @@
 		},
 	];
 
-	const skills: PageLogosProps["items"] = [
-		"logos:nuxt-icon",
-		"logos:nestjs",
-		"logos:postgresql",
-		"logos:typescript-icon",
-		"logos:vue",
-		"logos:tailwindcss-icon",
-		"logos:laravel",
-		"logos:mysql",
-		"logos:javascript",
-		"logos:php",
-		"logos:docker-icon",
+	const skills: { name: string; icon: string }[] = [
+		{ name: "NuxtJS", icon: "logos:nuxt-icon" },
+		{ name: "NestJS", icon: "logos:nestjs" },
+		{ name: "PostgreSQL", icon: "logos:postgresql" },
+		{ name: "TypeScript", icon: "logos:typescript-icon" },
+		{ name: "VueJS", icon: "logos:vue" },
+		{ name: "TailwindCSS", icon: "logos:tailwindcss-icon" },
+		{ name: "Laravel", icon: "logos:laravel" },
+		{ name: "MySQL", icon: "logos:mysql" },
+		{ name: "JavaScript", icon: "logos:javascript" },
+		{ name: "PHP", icon: "logos:php" },
+		{ name: "Docker", icon: "logos:docker-icon" },
 	];
 </script>
