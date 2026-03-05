@@ -11,7 +11,7 @@ export default defineNuxtPlugin((nuxtApp) => {
 				scrollTrigger: {
 					trigger: el,
 					start: "top 90%",
-					toggleActions: "play none none reverse",
+					once: true,
 				},
 				autoAlpha: 0,
 				y: 50,
@@ -23,7 +23,7 @@ export default defineNuxtPlugin((nuxtApp) => {
 				scrollTrigger: {
 					trigger: el,
 					start: "top 90%",
-					toggleActions: "play none none reverse",
+					once: true,
 				},
 				autoAlpha: 0,
 				y: 50,
@@ -36,7 +36,7 @@ export default defineNuxtPlugin((nuxtApp) => {
 				scrollTrigger: {
 					trigger: el,
 					start: "top 90%",
-					toggleActions: "play none none reverse",
+					once: true,
 				},
 				autoAlpha: 0,
 				x: 50,
@@ -49,7 +49,7 @@ export default defineNuxtPlugin((nuxtApp) => {
 				scrollTrigger: {
 					trigger: el,
 					start: "top 90%",
-					toggleActions: "play none none reverse",
+					once: true,
 				},
 				autoAlpha: 0,
 				scale: 0.5,
