@@ -4,7 +4,12 @@
 		title="Professional Experience"
 		description="A timeline of roles where I delivered full-stack solutions with clean architecture and scalable systems."
 		orientation="horizontal"
-		:ui="{ container: 'items-start!' }">
+		:ui="{
+			container: 'items-start!',
+			title: 'fade-up',
+			description: 'fade-up',
+			links: 'fade-up',
+		}">
 		<template #links>
 			<UButton
 				label="Download CV"
@@ -17,7 +22,12 @@
 		<UTimeline
 			:defaultValue="2"
 			:items="experiences"
-			:ui="{ separator: 'bg-neutral-900', indicator: 'bg-neutral-900' }"
+			:ui="{
+				separator: 'bg-neutral-900',
+				indicator: 'bg-neutral-900',
+				item: 'fade-up-stagger',
+				wrapper: 'fade-up-stagger',
+			}"
 			reverse>
 			<template #title="{ item }">
 				<span>{{ item.title }}</span>
@@ -36,7 +46,7 @@
 			<template #description="{ item }">
 				<p class="mt-2">{{ item.description }}</p>
 
-				<div class="mt-4 flex gap-2">
+				<div class="fade-up-stagger mt-4 flex gap-2">
 					<UBadge
 						v-for="tag in item.tags"
 						:key="tag"

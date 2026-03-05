@@ -1,6 +1,8 @@
 <template>
 	<UApp>
-		<UHeader class="absolute w-full bg-neutral-800">
+		<UHeader
+			class="absolute w-full bg-neutral-800"
+			:ui="{ right: 'fade-left-stagger', title: 'fade-scale' }">
 			<template #title>
 				<img src="~/assets/images/edge-logo-transparent.png" class="h-8 w-auto" />
 			</template>
@@ -24,7 +26,7 @@
 
 		<UFooter class="bg-neutral-800 py-10">
 			<div class="text-center">
-				<div>
+				<div class="fade-up-stagger">
 					<UButton
 						v-for="(social, index) in socials"
 						:key="index"
@@ -35,7 +37,7 @@
 						target="_blank" />
 				</div>
 
-				<p class="text-muted mt-8 text-xs">
+				<p class="text-muted fade-up mt-8 mb-20 text-xs">
 					© {{ currentYear }} Ian Del Rosario. All rights reserved.
 				</p>
 			</div>

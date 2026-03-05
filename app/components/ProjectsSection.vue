@@ -3,7 +3,13 @@
 		id="projects"
 		title="Featured Projects"
 		description="Real-word applcations built with modern full-stack technologies and clean, scalable achitecture."
-		:ui="{ root: 'bg-neutral-900' }"
+		:ui="{
+			root: 'bg-neutral-900',
+			title: 'fade-up',
+			description: 'fade-up',
+			features: 'fade-up-stagger',
+			links: 'fade-up',
+		}"
 		:links="[
 			{
 				label: 'View Project Archive',

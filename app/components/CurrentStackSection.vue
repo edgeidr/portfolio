@@ -4,7 +4,13 @@
 		title="My Current Stack"
 		description="Technologies I consistently use to deliver clean architecture, efficient code, and scalable web applications."
 		orientation="horizontal"
-		:ui="{ root: 'bg-neutral-900 ', container: 'items-start!' }">
+		:ui="{
+			root: 'bg-neutral-900 ',
+			container: 'items-start!',
+			title: 'fade-up',
+			description: 'fade-up',
+			links: 'fade-up',
+		}">
 		<template #links>
 			<UDrawer>
 				<UButton label="View All Skills" variant="subtle" />
@@ -23,23 +29,26 @@
 		</template>
 
 		<div class="ml-auto max-w-md">
-			<h3 class="text-2xl font-bold">How I Apply My Stack</h3>
+			<h3 class="fade-up text-2xl font-bold">How I Apply My Stack</h3>
 
 			<div class="mt-8 space-y-8">
 				<UPageFeature
 					title="Interactive Experiences"
 					description="Build web tools, dashboards, and editors that are intuitive and user-friendly."
-					icon="hugeicons:computer-programming-02" />
+					icon="hugeicons:computer-programming-02"
+					:ui="{ root: 'fade-up' }" />
 
 				<UPageFeature
 					title="Performance & Maintainability"
 					description="Focus on clean architecture, fast load times, and scalable, maintainable code."
-					icon="hugeicons:zap" />
+					icon="hugeicons:zap"
+					:ui="{ root: 'fade-up' }" />
 
 				<UPageFeature
 					title="Scalable Solutions"
 					description="Deliver full-stack systems that handle growth and complexity with ease."
-					icon="hugeicons:chart-up" />
+					icon="hugeicons:chart-up"
+					:ui="{ root: 'fade-up' }" />
 			</div>
 		</div>
 	</UPageSection>
@@ -49,7 +58,7 @@
 			root: 'bg-linear-to-t from-neutral-800 to-neutral-900 from-70% to-70%',
 			container: 'pt-0!',
 		}">
-		<UPageGrid class="mx-auto">
+		<UPageGrid class="fade-up-stagger mx-auto">
 			<UPageCard
 				v-for="(card, index) in cards"
 				:key="index"
