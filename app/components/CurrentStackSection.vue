@@ -66,8 +66,9 @@
 					container: 'aspect-square',
 					title: 'text-xl',
 					leading: 'hidden',
+					wrapper: 'mx-auto text-center',
 				}">
-				<UIcon :name="card.icon" class="text-primary mb-4 size-20" />
+				<UIcon :name="card.icon" class="text-primary mx-auto my-2 size-20" />
 			</UPageCard>
 		</UPageGrid>
 	</UPageSection>
